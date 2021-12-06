@@ -16,11 +16,11 @@ use std::{hash, mem::size_of};
 use std::{iter::FromIterator, slice};
 
 use crate::imp_prelude::*;
-use crate::{
-    dimension,
-    iter::{Iter, IterMut},
-    numeric_util, FoldWhile, NdIndex, Zip,
-};
+
+use crate::dimension;
+use crate::{FoldWhile, NdIndex, Zip};
+use crate::iter::{Iter, IterMut};
+use crate::numeric_util;
 
 #[cold]
 #[inline(never)]
